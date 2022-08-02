@@ -1,13 +1,15 @@
+/* eslint max-classes-per-file: ["error", 2] */
+
 const inputTitle = document.getElementById('title');
 const inputAuthor = document.getElementById('author');
 const submitButton = document.querySelector('.add-book');
 const bookSection = document.querySelector('.library');
 class Book {
-    constructor(title, author) {
-      this.title = title;
-      this.author = author;
-    }
+  constructor(title, author) {
+    this.title = title;
+    this.author = author;
   }
+}
 
 // Array of books
 class BookCollection {
@@ -15,8 +17,7 @@ class BookCollection {
     this.books = books;
   }
 
-
-//Add a book
+  // Add a book
   add(addBook) {
     this.books.push(addBook);
     this.display(addBook);
@@ -60,7 +61,6 @@ class BookCollection {
     localStorage.setItem('addBook', JSON.stringify({ bookColl: this.books }));
   }
 }
-
 
 const collect = new BookCollection();
 if (localStorage.getItem('addBook')) {
