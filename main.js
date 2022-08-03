@@ -17,11 +17,6 @@ class BookCollection {
     this.books = books;
   }
 
-  // Get Books
-  getBooks(){
-    
-  }
-
   // Add a book
   add(addBook) {
     this.books.push(addBook);
@@ -76,7 +71,7 @@ if (localStorage.getItem('addBook')) {
 }
 
 form.addEventListener('submit', (e) => {
- // prevents default behaviour of the form of submitting
-    e.preventDefault();
+  // prevents default behaviour of the form of submitting
+  e.preventDefault();
   collect.add(new Book(inputTitle.value, inputAuthor.value));
 });
