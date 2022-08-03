@@ -40,10 +40,10 @@ class BookCollection {
   display(data) {
     if (this) {
       const div = document.createElement('div');
-      div.className = 'book-collection';
+      div.classList.add('book-collection', 'bookdiv');
       div.innerHTML = `<h4>"${data.title}" by
                     ${data.author}</h4>
-                    <button data-value="${data.title}-${data.author}" type="button" class ="remove-book">Remove</button><hr />`;
+                    <button data-value="${data.title}-${data.author}" type="button" class ="remove-book">Remove</button></>`;
       bookSection.appendChild(div);
     }
   }
