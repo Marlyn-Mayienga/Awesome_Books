@@ -2,7 +2,7 @@
 
 const inputTitle = document.getElementById('title');
 const inputAuthor = document.getElementById('author');
-const submitButton = document.querySelector('.add-book');
+const form = document.getElementById('book-form');
 const bookSection = document.querySelector('.library');
 class Book {
   constructor(title, author) {
@@ -15,6 +15,11 @@ class Book {
 class BookCollection {
   constructor(books = []) {
     this.books = books;
+  }
+
+  // Get Books
+  getBooks(){
+    
   }
 
   // Add a book
@@ -70,6 +75,8 @@ if (localStorage.getItem('addBook')) {
   });
 }
 
-submitButton.addEventListener('click', () => {
+form.addEventListener('submit', (e) => {
+ // prevents default behaviour of the form of submitting
+    e.preventDefault();
   collect.add(new Book(inputTitle.value, inputAuthor.value));
 });
