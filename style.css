@@ -23,4 +23,26 @@
 .library-section {
   text-align: center;
   padding: 20px;
+  margin-top: 15px;
+}
+
+.navbar {
+  background-color: #e3f2fd;
+}
+
+.active {
+  display: block;
+}
+
+main {
+  margin-top: 70px;
+}
+
+.page-footer {
+  margin-top: 50px;
+  background-color: #e3f2fd;
+}
+
+.nav-link:hover {
+  background-color: blue;
 }
