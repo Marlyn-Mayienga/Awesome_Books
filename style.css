@@ -46,3 +46,35 @@ main {
 .nav-link:hover {
   background-color: blue;
 }
+
+.date {
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#add-book {
+  float: left;
+}
+
+.btn-primary {
+  margin-left: 67%;
+}
+
+h3 {
+  margin-left: 44%;
+  margin-bottom: 3%;
+}
+
+#contact-section h2 {
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+#contact-section p {
+  margin-left: 33%;
+}
+
+.contacts {
+  margin-left: 36%;
+}
