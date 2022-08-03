@@ -6,23 +6,21 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-
 }
 
 .library > :nth-child(odd) {
-    background-color: lightgray;
-  }
-  
-  .bookdiv {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    border-bottom: 1px solid gray;
-  }
-  
-  .library-section{
-    text-align: center;
-    padding: 20px;
-  }
-  
+  background-color: lightgray;
+}
+
+.bookdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid gray;
+}
+
+.library-section {
+  text-align: center;
+  padding: 20px;
+}
