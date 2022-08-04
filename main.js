@@ -107,3 +107,4 @@ aAddBook.addEventListener('click', () => {
 aContact.addEventListener('click', () => {
   showSection('contact-section');
 });
+showSection('new-book-section');
