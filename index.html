@@ -11,12 +11,6 @@
       crossorigin="anonymous"
     />
     <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-      crossorigin="anonymous"
-    />
-    <link
       href="https://fonts.googleapis.com/css?family=Lato"
       rel="stylesheet"
     />
@@ -33,111 +27,28 @@
     <title>Awesome Books</title>
   </head>
   <body>
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top navbar-light">
-            <div class="container-fluid second-nav">
-                <a class="navbar-brand hide-sm" href="index.html">
-                  <span><i class="fas fa-book-reader"></i></span>
-                  The Library</a
-                >
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="navbar-toggler-icon">
-                    <i class="menuIcon fas fa-bars"></i>
-                    <i class="closeIcon fas fa-times"></i>
-                  </span>
-                </button>
-                <div
-                  class="collapse navbar-collapse justify-content-end"
-                  id="navbarSupportedContent"
-                >
-                  <ul class="navbar-nav mb-2 mb-lg-0 menu">
-                    <li class="nav-item">
-                      <a
-                        class="nav-link active menuItem"
-                        aria-current="page"
-                        href="#book-list"
-                        id="book-list"
-                        >Book List</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active menuItem" aria-current="page" href="#add-book"
-                      id="add-book"
-                        >Add Book</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active menuItem" aria-current="page" href="#contact-us"
-                      id="contact-us"
-                        >Contact</a
-                      >
-                    </li>
-                  </ul>
-                </div>
+    <section class="library-section">
+      <h1>Awesome Books</h1>
+      <div class="library"></div>
+      <h3>Add New Book</h3>
+        <form id="book-form" class="gy-2 gx-3 align-items-center d-flex flex-column" >
+            <div class="w-25" >
+              <label>Title</label>
+              <input type="text" class="form-control" id="title" placeholder="Jane Doe">
+            </div>
+            <div class="w-25">
+                <label>Author</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="author" placeholder="Username">
               </div>
-        </nav>
-    </header>
-
-   <main>
-    <div class="date">Wed, 03 Aug 2022 17:31:04 GMT</div>
-    <section class="library-section" id="library-section">
-        <h1>Awesome Books</h1>
-        <div class="library"></div>
-      </section>
-      <section class="" id="new-book-section">
-        
-          <h3>Add New Book</h3>
-          <form id="book-form" class="gy-2 gx-3 align-items-center d-flex flex-column" >
-              <div class="w-25" >
-                <label>Title</label>
-                <input type="text" class="form-control" id="title" placeholder="Jane Doe">
-              </div>
-              <div class="w-25">
-                  <label>Author</label>
-                <div class="input-group">
-                  <input type="text" class="form-control" id="author" placeholder="Username">
-                </div>
-              </div>
-             <br>
-              <div class=" col-auto w-25 col-12">
-                <button type="submit" class="btn btn-primary add-book">Add book</button>
-              </div>
-            </form>
-      </section>
-      <section id="contact-section">
-          <h2>Contact Information</h2>
-          <p>Do you have any questions or you just want to say "Hello"?<br>You can reach out to us!</p>
-          <ul class="contacts">
-            <li>
-              Our email: marlymayienga@gmail.com, nkargleeny@gmail.com
-            </li>
-            <li>
-              Our phone number: +2540000000000, +2347078800891
-            </li>
-            <li>
-              Our address: Champ de Mars, 5 Av. Anatole France, 75007 Paris, France
-            </li>
-          </ul>
-        </section>
-   </main>
-   <footer class="page-footer font-small blue">
-
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2022 Copyright:
-        <a><span><i class="fas fa-book-reader"></i></span>
-        The Library</a>
-        </div>
-    <!-- Copyright -->
-  
-  </footer>
+            </div>
+           <br>
+            <div class=" col-auto w-25 col-12">
+              <button type="submit" class="btn btn-primary add-book">Add book</button>
+            </div>
+          </form>
+       
+    </section>
     <script src="./main.js"></script>
   </body>
 </html>
