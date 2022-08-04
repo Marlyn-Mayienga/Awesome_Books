@@ -4,6 +4,7 @@ const inputTitle = document.getElementById('title');
 const inputAuthor = document.getElementById('author');
 const form = document.getElementById('book-form');
 const bookSection = document.querySelector('.library');
+
 class Book {
   constructor(title, author) {
     this.title = title;
@@ -75,3 +76,35 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   collect.add(new Book(inputTitle.value, inputAuthor.value));
 });
+
+// -----Navbar functionality-----//
+
+const aBookList = document.querySelector('#book-list');
+const aAddBook = document.querySelector('#add-book');
+const aContact = document.querySelector('#contact-us');
+
+const sections = document.getElementsByTagName('section');
+
+/**
+ * Show Section based on ID Passed
+ * @param id - ID of Section to be shown
+ */
+function showSection(id) {
+  for (let i = 0; i < sections.length; i += 1) {
+    if (sections[i].id.includes(id)) {
+      sections[i].style.display = 'block';
+    } else {
+      sections[i].style.display = 'none';
+    }
+  }
+}
+aBookList.addEventListener('click', () => {
+  showSection('library-section');
+});
+aAddBook.addEventListener('click', () => {
+  showSection('new-book-section');
+});
+aContact.addEventListener('click', () => {
+  showSection('contact-section');
+});
+showSection('new-book-section');
